@@ -9,7 +9,7 @@ jobs:
     
     - name: build and tag image
       run: |
-        docker build -t zulqornain/uas-pccks-2022:latest -f Dockerfile .
+        docker build -t alifzulqornain/uas-pccks-2022:latest -f Dockerfile .
     
     - name: push to dockerhub
       run: docker login -u alifzulqornain -p dckr_pat_MTR3K19F9Vf5Bqaw7ixx9Xj0GNc && docker push alifzulqornain/uas-pccks-2022:latest
